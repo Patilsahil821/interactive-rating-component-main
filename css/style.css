@@ -20,12 +20,14 @@ body {
   width: 100vw;
   background-color: var(--VeryDarkBlue);
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 .main-container {
   width: 370px;
   min-width: 355px;
   min-height: 360px;
   position: relative;
-  overflow: hidden;
 }
 .btn {
   border: 0;
@@ -128,7 +130,7 @@ p {
   width: 370px;
   min-width: 355px;
   min-height: 360px;
-  background-color: rgb(255, 166, 0, 0.7);
+  background-color: transparent;
   position: absolute;
   bottom: -360px;
   left: -370px;
@@ -149,6 +151,9 @@ p {
   70% {
     top: -150px;
   }
+  90% {
+    top: -50px;
+  }
   100% {
     top: 0px;
     transform: scale(1);
@@ -158,9 +163,24 @@ p {
   0% {
     bottom: -360px;
     left: -370px;
+    background-color: transparent;
+  }
+  50% {
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--Orange);
   }
   100% {
     bottom: 360px;
     left: 370px;
+    background-color: transparent;
+  }
+}
+@keyframes example4 {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: hidden;
   }
 }

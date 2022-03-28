@@ -1,7 +1,7 @@
 let isUserClickedRated = false
 let submit = document.getElementById('submit')
 let ratingNumber = null
-submit.addEventListener('click', (e) => {
+submit.addEventListener('click', async (e) => {
   e.preventDefault()
   if (isUserClickedRated === false) {
     alert('please select the rating first')
@@ -12,12 +12,12 @@ submit.addEventListener('click', (e) => {
     ).innerText = `You selected ${ratingNumber} out of 5`
     document.getElementById('first').style.animation =
       'example1 100ms ease-out forwards'
-    setTimeout(function () {
-      document.getElementById('second').style.animation =
-        'example2 250ms ease-in-out forwards'
-      document.getElementById('orange').style.animation =
-        'example3 600ms ease-out 250ms forwards'
-    }, 100)
+    document.getElementById('second').style.animation =
+      'example2 500ms ease-in-out 100ms forwards'
+    document.getElementById('orange').style.animation =
+      'example3 600ms 600ms forwards'
+    document.getElementById('main').style.animation =
+      'example4 600ms 600ms forwards'
   }
 })
 const ratings = ['1', '2', '3', '4', '5']

@@ -128,13 +128,13 @@ p {
 }
 
 .orange-animation {
-  width: 370px;
-  min-width: 355px;
-  min-height: 360px;
+  width: 500px;
+  height: 500px;
   background-color: transparent;
   position: absolute;
   bottom: -360px;
   left: -370px;
+  border-radius: 50%;
 }
 @keyframes example1 {
   from {
@@ -164,17 +164,12 @@ p {
   0% {
     bottom: -360px;
     left: -370px;
-    background-color: transparent;
-  }
-  50% {
-    bottom: 0px;
-    left: 0px;
-    background-color: var(--Orange);
+    background-color: orange;
   }
   100% {
     bottom: 360px;
     left: 370px;
-    background-color: transparent;
+    background-color: orange;
   }
 }
 @keyframes example4 {

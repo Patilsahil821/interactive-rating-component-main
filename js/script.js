@@ -15,9 +15,9 @@ submit.addEventListener('click', async (e) => {
     document.getElementById('second').style.animation =
       'example2 500ms ease-in-out 100ms forwards'
     document.getElementById('orange').style.animation =
-      'example3 600ms 600ms forwards'
+      'example3 1500ms 600ms forwards'
     document.getElementById('main').style.animation =
-      'example4 600ms 600ms forwards'
+      'example4 1500ms 600ms forwards'
   }
 })
 const ratings = ['1', '2', '3', '4', '5']

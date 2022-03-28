@@ -1,0 +1,166 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--VeryDarkBlue);
+}
+.main-container {
+  width: 370px;
+  min-width: 355px;
+  min-height: 360px;
+  position: relative;
+  overflow: hidden;
+}
+.btn {
+  border: 0;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+p {
+  font-size: 15px;
+  color: var(--MediumGrey);
+}
+.star-icon-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f353c;
+}
+.content {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.rating-numbers {
+  margin-top: 1.5rem;
+}
+.rating-numbers button {
+  margin-right: 0.6rem;
+  background-color: #2f353c;
+  font-weight: bold;
+  color: var(--LightGrey);
+}
+.rating-numbers button:hover {
+  background-color: var(--Orange);
+  color: white;
+}
+.submit-btn {
+  width: 100%;
+  color: white;
+  background-color: var(--Orange);
+  outline: none;
+  border: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  padding: 0.8rem;
+  margin-top: 1.5rem;
+}
+.submit-btn:hover {
+  background-color: white;
+  color: orange;
+}
+.first {
+  padding: 1.5rem;
+  background-color: #1d242d;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+}
+button:hover {
+  cursor: pointer;
+}
+h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+}
+p {
+  line-height: 1.5;
+}
+.second {
+  padding: 1.5rem;
+  background-color: #1d242d;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  transform: scale(0);
+}
+.show-rating {
+  width: fit-content;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  background-color: #2f353c;
+}
+.show-rating p {
+  color: hsl(25, 97%, 53%, 0.7);
+}
+
+.orange-animation {
+  width: 370px;
+  min-width: 355px;
+  min-height: 360px;
+  background-color: rgb(255, 166, 0, 0.7);
+  position: absolute;
+  bottom: -360px;
+  left: -370px;
+}
+@keyframes example1 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes example2 {
+  0% {
+    transform: scale(0);
+    top: 0px;
+  }
+  70% {
+    top: -150px;
+  }
+  100% {
+    top: 0px;
+    transform: scale(1);
+  }
+}
+@keyframes example3 {
+  0% {
+    bottom: -360px;
+    left: -370px;
+  }
+  100% {
+    bottom: 360px;
+    left: 370px;
+  }
+}

@@ -85,7 +85,8 @@ p {
 }
 .first {
   padding: 1.5rem;
-  background-color: #1d242d;
+  /* background-color: #1d242d; */
+  background: linear-gradient(to bottom, #1d242d, rgba(0, 0, 0, 0.4));
   border-radius: 20px;
   position: absolute;
   top: 0;
